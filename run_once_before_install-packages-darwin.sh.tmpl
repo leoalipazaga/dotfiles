@@ -4,6 +4,12 @@
 brew bundle --no-lock --file=/dev/stdin <<EOF
 
 cask "brave-browser"
+brew "fnm"
+brew "postgresql@15"
+brew "redis"
+
+fnm install 16.12.0
+
 
 EOF
 {{ end -}}
