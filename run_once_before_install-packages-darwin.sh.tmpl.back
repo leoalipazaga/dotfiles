@@ -7,6 +7,7 @@ cask "brave-browser"
 brew "fnm"
 brew "postgresql@15"
 brew "redis"
+brew "starship"
 
 EOF
 {{ end -}}
