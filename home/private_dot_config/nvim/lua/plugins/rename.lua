@@ -1,3 +1,8 @@
+-- Disabled this plugin until get know how it works
+if true then
+  return {}
+end
+
 return {
   "smjonas/inc-rename.nvim",
   config = function()

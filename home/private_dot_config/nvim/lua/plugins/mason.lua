@@ -42,6 +42,7 @@ return {
       ensure_installed = {
         "prismals",
         "prettier",
+        "vimls",
         "stylua",
         "eslint_d",
       },
