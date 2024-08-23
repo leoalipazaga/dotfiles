@@ -8,6 +8,12 @@ brew "fnm"
 brew "postgresql@15"
 brew "redis"
 brew "starship"
+brew "lazygit"
+brew "fzf"
+brew "pngpaste"
+brew "ripgrep"
+brew "chezmoi"
+brew "pnpm"
 
 EOF
 {{ end -}}
