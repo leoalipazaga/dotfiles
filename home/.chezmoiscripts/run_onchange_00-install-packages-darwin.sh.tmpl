@@ -1,0 +1,23 @@
+{{- if eq .chezmoi.os "darwin" -}}
+#!/bin/sh
+
+brew update
+
+brew bundle --no-lock --file=/dev/stdin <<EOF
+
+cask "brave-browser"
+brew "fnm"
+brew "postgresql@15"
+brew "redis"
+brew "starship"
+brew "lazygit"
+cask "fzf"
+brew "pngpaste"
+brew "ripgrep"
+brew "chezmoi"
+brew "pnpm"
+brew "neovim"
+
+EOF
+
+{{ end -}}
