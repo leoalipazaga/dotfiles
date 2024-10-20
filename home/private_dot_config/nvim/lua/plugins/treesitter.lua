@@ -1,20 +1,27 @@
 -- below configuration is overrite <C-leader> keymap
-if true then
-  return {}
-end
-
 return {
   "nvim-treesitter/nvim-treesitter",
+  cmd = {
+    "TSInstall",
+    "TSBufEnable",
+    "TSBufDisable",
+    "TSModuleInfo",
+    "TSInstallFromGrammar",
+  },
   build = ":TSUpdate",
-  config = function()
-    local treesitter = require("nvim-treesitter.configs")
-    treesitter.setup({
-      highlight = { enable = true },
-      indent = { enable = true },
-      ensure_installed = {
-        "svelte",
-        "astro",
-      },
-    })
-  end,
+  opts = {
+    ensure_installed = {
+      "astro",
+      "svelte",
+      "css",
+      "html",
+      "javascript",
+      "lua",
+      "luadoc",
+      "vim",
+      "vimdoc",
+      "markdown",
+      "markdown_inline",
+    },
+  },
 }
