@@ -143,7 +143,7 @@ return {
         graphql = {},
         prismals = {},
         gopls = {},
-        phpactor = {},
+        intelephense = {},
       }
 
       local formatters = {
