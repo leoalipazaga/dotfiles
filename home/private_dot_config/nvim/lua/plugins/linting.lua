@@ -1,3 +1,8 @@
+-- TODO: Remove linting after refactor lsp linting
+if true then
+  return {}
+end
+
 return {
   {
     "mfussenegger/nvim-lint",
