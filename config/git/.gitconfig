@@ -1,0 +1,9 @@
+# Per-user identity lives in ~/.gitconfig.local (gitignored, machine-local).
+# Create with:
+#   git config -f ~/.gitconfig.local user.name "Your Name"
+#   git config -f ~/.gitconfig.local user.email "you@example.com"
+; [include]
+; 	path = ~/.gitconfig.local
+
+; [url "https://github.com/"]
+; 	insteadOf = git@github.com:
