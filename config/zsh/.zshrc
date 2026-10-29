@@ -161,3 +161,7 @@ unset __secret_key __secret_val
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
+
+
+# Remove duplicated paths
+typeset -U PATH path
