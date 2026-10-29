@@ -108,6 +108,7 @@ alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias pn=pnpm
 alias npmr="npm run"
+alias gbc="git branch | grep -v $(git_main_branch) | xargs git branch -d"
 
 # bun completions
 [ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
