@@ -163,6 +163,8 @@ unset __secret_key __secret_val
 # Load Angular CLI autocompletion.
 source <(ng completion script)
 
+# Added by the Postman CLI installer
+export PATH='~/.local/bin':"$PATH"
 
 # Remove duplicated paths
 typeset -U PATH path
